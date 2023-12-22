@@ -10,7 +10,7 @@ resource "azurerm_public_ip" "chef" {
     name                         = "${var.chef_computer_name}-pubip"
     location                     = "${azurerm_resource_group.chef.location}"
     resource_group_name          = "${azurerm_resource_group.chef.name}"
-    public_ip_address_allocation = "static"
+    allocation_method            = "public"
 }
 
 # Create virtual NIC that will be used with our chef instance.
@@ -108,7 +108,7 @@ resource "azurerm_public_ip" "automate" {
     name                         = "${var.auto_computer_name}-pubip"
     location                     = "${azurerm_resource_group.automate.location}"
     resource_group_name          = "${azurerm_resource_group.automate.name}"
-    public_ip_address_allocation = "static"
+    allocation_method            = "public"
 }
 
 # Create virtual NIC that will be used with our automate instance.

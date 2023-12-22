@@ -1,6 +1,10 @@
-provider "azurerm" {
-    subscription_id = "xxxx"
-    client_id = "xxxx"
-    client_secret = "xxxx"
-    tenant_id = "xxxx"
+terraform {
+    required_providers {
+         azurerm = {
+            subscription_id = "xxxx"
+            client_id = "xxxx"
+            client_secret = "xxxx"
+            tenant_id = "xxxx"
+         }
+    }
 }
