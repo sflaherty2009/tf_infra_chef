@@ -83,7 +83,7 @@ resource "azurerm_virtual_machine" "chef" {
       "sudo apt-get install git -y",
       "sudo curl --connect-timeout 60 -L https://www.chef.io/chef/install.sh | sudo bash",
       "sudo mkdir -p /var/chef/cache /var/chef/cookbooks",
-      "sudo git clone https://scott_flaherty:Grad_2155@bitbucket.org/trekbikes/cb_dvo_chefserver.git /var/chef/cookbooks/cb_dvo_chefserver",
+      "sudo git clone https://scott_flaherty:xxx@bitbucket.org/cb_dvo_chefserver.git /var/chef/cookbooks/cb_dvo_chefserver",
       "sudo wget -qO- https://supermarket.chef.io/cookbooks/chef-server/versions/5.4.0/download |sudo tar xvzC /var/chef/cookbooks",
       "sudo wget -qO- https://supermarket.chef.io/cookbooks/chef-ingredient/versions/1.1.0/download |sudo tar xvzC /var/chef/cookbooks",
       "sudo wget -qO- https://supermarket.chef.io/cookbooks/chef-server-backup/versions/0.2.1/download |sudo tar xvzC /var/chef/cookbooks",
@@ -197,7 +197,7 @@ resource "azurerm_virtual_machine" "automate" {
       "sudo apt-get install git -y",
       "sudo curl --connect-timeout 60 -L https://www.chef.io/chef/install.sh | sudo bash",
       "sudo mkdir -p /var/chef/cache /var/chef/cookbooks",
-      "sudo git clone https://scott_flaherty:Grad_2155@bitbucket.org/trekbikes/cb_dvo_cautomate.git /var/chef/cookbooks/cb_dvo_cautomate",
+      "sudo git clone https://scott_flaherty:Grad_2155@bitbucket.org/cb_dvo_cautomate.git /var/chef/cookbooks/cb_dvo_cautomate",
       "sudo wget -qO- https://supermarket.chef.io/cookbooks/ohai/versions/5.2.0/download |sudo tar xvzC /var/chef/cookbooks",
       "sudo wget -qO- https://supermarket.chef.io/cookbooks/sysctl/versions/0.10.2/download |sudo tar xvzC /var/chef/cookbooks",
       # "sudo scp $CHEF_USER@$CHEF_SERVER:/drop/delivery.pem /tmp/delivery_user.pem"
